@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9f9f9;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#error-holder{
+  font-weight: bolder;
+  float: left;
+}
+
+/****************************/
+/*        Search Bar        */
+/****************************/
+
+.top-bar{
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  z-index: 99;
+  position: fixed;
+  display: flex;
+}
+
+.top-bar .left-content .logo img{
+  width: 150px;
+  margin: 25px;
+}
+
+.top-bar .search-bar{
+  display: inline-block;
+  margin: auto;
+}
+
+.top-bar + div {
+  padding-top: 80px;
+}
+
+/****************************/
+/*        Search View       */
+/****************************/
+
+.search-view{
+  margin-bottom: 10px;
+}
+.search-view .videos-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.search-view .videos-list .video-card{
+  width: 280px;
+  margin: 8px;
+  cursor: pointer;
+}
+.search-view .videos-list .video-card .video-thumbnail img{
+  width: 280px;
+}
+.search-view .videos-list .video-card .video-info .video-title{
+  font-size: 14px;
+  font-weight: bold;
+}
+.search-view .videos-list .video-card .video-info .video-channel{
+  font-size: 14px;
+  color: gray;
+}
+.search-view .videos-list .video-card .video-info .video-description{
+  overflow-wrap: anywhere;
+  font-size: 13px;
+}
+
+.search-view .buttons-list{
+  display: flex;
+  justify-content: center;
+}
+
+.search-view .buttons-list button{
+  margin: 10px;
+}
+
+
+/****************************/
+/*         Video View       */
+/****************************/
+
+.video-view .video-section{
+  width: 640px;
+  margin-top: 20px;
+  margin-left: 80px;
+  float: left;
+}
+
+.video-view .video-section .video-info .video-title{
+  font-size: 18px;
+  width: 640px;
+} 
+
+.video-view .video-section .video-info .video-miscellaneous{
+  height: 40px;
+  width: 640px;
+  display: flex;
+  justify-content: space-between;
+}
+.video-view .video-section .video-info .video-miscellaneous .left-content{
+  margin: 8px;
+  display: flex;
+}
+.video-view .video-section .video-info .video-miscellaneous .left-content .dot-separator{
+  margin: 0 5px;
+}
+.video-view .video-section .video-info .video-miscellaneous .right-content{
+  margin: 5px 0;
+  display: flex;
+  justify-content: end;
+}
+.video-view .video-section .video-info .video-miscellaneous .right-content .video-likes, 
+.video-view .video-section .video-info .video-miscellaneous .right-content .video-dislikes{
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+.video-view .video-section .video-info .video-miscellaneous .video-views, 
+.video-view .video-section .video-info .video-miscellaneous .dot-separator, 
+.video-view .video-section .video-info .video-miscellaneous .video-published-date{
+  display: flex;
+  align-items: center;
+}
+
+.video-view .video-section .channel-info{
+  display: flex;
+  align-items: center;
+}
+.video-view .video-section .channel-info .channel-text{
+  margin: 0 10px;
+}
+.video-view .video-section .channel-info .channel-text .channel-title{
+  font-weight: bold;
+}
+.video-view .video-section .channel-info .channel-thumbnail img{
+  width: 80px;
+  border-radius: 50%;
+}
+
+.video-view .video-section .video-description{
+  white-space: pre-wrap;
+}
+
+.video-view .related-videos-section{
+  float: right;
+  max-width: 450px;
+  margin-top: 20px;
+  margin-right: 50px;
+  max-height: 710px;
+  overflow: auto;
+}
+
+.video-view .related-videos-section .video-card{
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.video-view .related-videos-section .video-card .left-content .video-thumbnail img{
+  width: 168px;
+  height: 94px;
+}
+
+.video-view .related-videos-section .video-card .right-content .video-title span{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.video-view .related-videos-section .video-card .right-content .video-channel span{
+  color: gray;
+  font-size: 13px;
+}
