@@ -9,6 +9,7 @@ const SearchBar = (props) => {
             <div className="left-content">
                 <div className="logo">
                     <img src={logo} />
+                    {console.log("dasasd")}
                 </div>
             </div>
             <div className="search-bar">

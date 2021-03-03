@@ -21,10 +21,10 @@ const Gateway = () => {
             <SearchBar query={query} handleSearchBar={(newQuery) => handleSearchBar(newQuery)}  handleSearchButton={(bool) => handleSearchButton(bool)}/>
             <BrowserRouter>
                 <Switch>
-                    <Route exact path="/" render={() => (
+                    <Route exact path="/Youtube-web" render={() => (
                         <SearchView query={query} searchButton={searchButton} handleSearchButton={(bool) => handleSearchButton(bool)}/>
                     )}/>
-                    <Route path="/video" render={() => (
+                    <Route exact path="/Youtube-web/video" render={() => (
                         <VideoView searchButton={searchButton} handleSearchButton={(bool) => handleSearchButton(bool)}/>
                     )}/>
                 </Switch>
